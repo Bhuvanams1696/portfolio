@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio - Bhuvanam S</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background-color: #E0DED7;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      z-index: 1000;
+    }
+
+    nav .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #0A0906;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      color: #00a2a2;
+    }
+
+    section {
+      padding: 60px 20px;
+    }
+
+    #home {
+      background-color: #0f172a;
+      color: white;
+      text-align: center;
+    }
+
+    #home h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    #home p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      background: none;
+      border: 2px solid #00a2a2;
+      color: #00a2a2;
+      padding: 10px 20px;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    #about, #education, #experience, #contact {
+      text-align: center;
+      background-color: #f4f4f4;
+    }
+
+    #about img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 4px solid #00a2a2;
+      margin-bottom: 20px;
+    }
+
+    .left-align {
+      text-align: left;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .role-title {
+      color: #00a2a2;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    .experience-block {
+      color: white;
+      background-color: #0f172a;
+      padding: 20px;
+      margin-top: 10px;
+      border-radius: 8px;
+    }
+
+    footer {
+      background-color: #0f172a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    footer a {
+      color: #00a2a2;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .download-btn {
+      margin-top: 10px;
+      display: inline-block;
+      padding: 8px 16px;
+      background-color: #00a2a2;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Bhuvanam S</div>
+    <ul>
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="home">
+    <h1>Computational Biologist</h1>
+    <h2>Bhuvanam Sivanantham</h2>
+    <p>Multi-Omics | Space Nutrition | Bioinformatics | R & Python | Molecular Docking</p>
+    <a href="#about" class="btn">Know more about me</a>
+  </section>
+
+  <section id="about">
+    <img src="https://avatars.githubusercontent.com/u/140359698?v=4" alt="Bhuvanam">
+    <p>I'm from West Bengal, India, with a Bachelor's degree in Biotechnology and a Master's in Bioinformatics. I am passionate about leveraging computational approaches to address complex biological challenges, drive next-generation genomic innovations, and actively contribute to the development and advancement of the bioinformatics field.</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="left-align">
+      <p><strong>Master of Bioinformatics</strong><br>Central University of South Bihar (2019–2021)<br>Focus: Bioinformatics Fundamentals, Cheminformatics, Biostatistics, Genomics & Proteomics, CADD, Next-Gen Sequencing fundamentals.</p>
+      <p><strong>Bachelor of Biotechnology</strong><br>MAKAUT University (2016–2019)<br>Emphasized genetic engineering, advanced lab techniques, and foundational bioinformatics approaches.</p>
+      <p><strong>High School (Science Stream)</strong><br>Siliguri Barada Kantha Vidhy Pith (2009–2016)<br>Developed a strong foundation in Physics, Chemistry, Biology, and Mathematics.</p>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="left-align experience-block">
+      <p class="role-title">Clinical Bioinformatician III – 4BaseCare (Apr 2024 - Present)</p>
+      <ul>
+        <li>Led the development of innovative bioinformatics strategies to drive research objectives.</li>
+        <li>Implemented robust validation frameworks for bioinformatics tools.</li>
+        <li>Optimized workflows using advanced computational techniques.</li>
+        <li>Mentored junior bioinformaticians and contributed to publications.</li>
+      </ul>
+
+      <p class="role-title">Clinical Bioinformatician II – 4BaseCare (Jul 2023 - Apr 2024)</p>
+      <ul>
+        <li>Spearheaded development of bioinformatics strategies and tool validations.</li>
+        <li>Collaborated with multidisciplinary teams and mentored juniors.</li>
+      </ul>
+
+      <p class="role-title">Associate Clinical Bioinformatician – 4BaseCare (Nov 2021 - Apr 2023)</p>
+      <ul>
+        <li>Developed precise pipelines and automated genomic data workflows.</li>
+      </ul>
+
+      <p class="role-title">Clinical Bioinformatics Intern – 4BaseCare (Sep 2021 - Nov 2021)</p>
+      <ul>
+        <li>Learned and practiced basic NGS data analysis and tools.</li>
+      </ul>
+
+      <p class="role-title">Dissertation Trainee – CUSB (Jan 2021 - Jul 2021)</p>
+      <ul>
+        <li>Studied ornithine decarboxylase for visceral leishmaniasis treatment using docking and simulations.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 style="color: #00a2a2;">Contact</h2>
+    <div class="left-align" style="color:white; background-color:#0f172a; padding: 20px; border-radius: 8px;">
+      <p>Location: West Bengal, India</p>
+      <p>Phone: +91 XXXXXXXXXXX</p>
+      <p>Email: <a href="mailto:prabirsaha490@gmail.com" style="color:#00a2a2;">prabirsaha490@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/prabir-saha-bioinformatician/" style="color:#00a2a2;">linkedin.com/in/prabir-saha-bioinformatician</a></p>
+      <p>GitHub: <a href="https://github.com/prabirsh" style="color:#00a2a2;">github.com/prabirsh</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 - Portfolio of Bhuvanam S</p>
+    <p>
+      <a href="mailto:prabirsaha490@gmail.com">Email</a> |
+      <a href="https://www.linkedin.com/in/prabir-saha-bioinformatician/">LinkedIn</a> |
+      <a class="download-btn" href="https://github.com/prabirsh/resume/raw/main/PrabirSaha_Resume.pdf" download>Download PDF</a>
+    </p>
+  </footer>
+
+</body>
+</html>
