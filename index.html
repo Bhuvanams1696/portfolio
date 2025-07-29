@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bhuvanam Portfolio</title>
+  <style>
+    /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #0A0906;
+      background-color: #F4F1EA;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: #E0DED7;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav .logo {
+      font-weight: bold;
+      font-size: 1.4rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #0A0906;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      background-color: #CCC0A3;
+    }
+
+    section {
+      padding: 80px 20px;
+      min-height: 100vh;
+      border-bottom: 1px solid #ccc;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    footer {
+      padding: 30px;
+      text-align: center;
+      background-color: #E0DED7;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Bhuvanam</div>
+    <ul>
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#extra">Extra</a></li>
+      <li><a href="#leadership">Leadership</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="home">
+    <h2>Home</h2>
+    <p>Welcome to my portfolio website. I’m Bhuvanam – passionate about computational biology, research, and digital innovation.</p>
+  </section>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>I’m an aspiring computational biologist with skills in R, Python, and multi-omics analysis. I enjoy learning and sharing knowledge in biotech and data science.</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <p>Include your academic background here – degrees, institutions, research work, or certifications.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>R & Python for Bioinformatics</li>
+      <li>Genomics, Transcriptomics, and Omics Integration</li>
+      <li>Molecular Docking</li>
+      <li>Data Visualization</li>
+    </ul>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <p>List your internships, training, freelance work, or relevant job experience here.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <p>Molecular Docking in Hodgkin Lymphoma, Multiomics in Rheumatoid Arthritis, Kanji for Space Nutrition... and more!</p>
+  </section>
+
+  <section id="extra">
+    <h2>Extra</h2>
+    <p>Workshops, online courses, volunteer activities, macrame arts, and anything else unique to you!</p>
+  </section>
+
+  <section id="leadership">
+    <h2>Leadership</h2>
+    <p>Talk about any roles you've held where you led or mentored others – student clubs, projects, etc.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: your.email@example.com<br>
+    LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a><br>
+    GitHub: <a href="https://github.com/Bhuvanams1696" target="_blank">github.com/Bhuvanams1696</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Bhuvanam | All rights reserved</p>
+  </footer>
+
+  <script>
+    // Scrollspy effect for active nav link
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll("nav ul li a");
+
+    window.addEventListener("scroll", () => {
+      let current = "";
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop - 70;
+        const sectionHeight = section.clientHeight;
+        if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
+          current = section.getAttribute("id");
+        }
+      });
+
+      navLinks.forEach((link) => {
+        link.classList.remove("active");
+        if (link.getAttribute("href").includes(current)) {
+          link.classList.add("active");
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
